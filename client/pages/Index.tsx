@@ -29,10 +29,10 @@ export default function Index() {
         <section className="space-y-4">
           <div className="flex flex-col items-center">
             <h1 className="text-2xl font-semibold tracking-tight mx-auto">
-              Link Gallery
+              Bookmarks
             </h1>
             <p className="text-sm text-muted-foreground mx-auto text-center">
-              Browse and search your saved links, inspired by Raindrop.io
+              Browse and search semi-curated links from the internet
             </p>
           </div>
           <Toolbar
