@@ -27,7 +27,7 @@ export default function Index() {
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
       <main className="container py-6 space-y-4">
         <section className="space-y-4">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center pb-4">
             <h1 className="text-2xl font-semibold tracking-tight mx-auto">
               Bookmarks
             </h1>
@@ -61,9 +61,9 @@ export default function Index() {
           ) : (
             <>
               <Grid items={items} variant={view} />
-              <div className="flex items-center justify-between text-sm text-muted-foreground">
-                <div>{`${total} items`}</div>
-                <div className="inline-flex items-center gap-px rounded-md border overflow-hidden">
+              <div className="flex items-center justify-center text-sm text-muted-foreground dark:text-slate-400 w-full self-stretch">
+                <div className="mr-auto">{`${total} items`}</div>
+                <div className="inline-flex items-center gap-px rounded-md border overflow-hidden dark:border-slate-800">
                   <button
                     className="px-3 h-9 bg-background disabled:opacity-50"
                     onClick={() => setPage((p) => Math.max(0, p - 1))}
